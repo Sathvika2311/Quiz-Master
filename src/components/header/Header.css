@@ -1,0 +1,109 @@
+.header{
+    position: fixed;
+    width: 100dvw;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    background: #178bff;
+    /*background: linear-gradient( to bottom, #009fff, #19a8ff, #30b1ff, #48baff, #62c4ff );*/
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    align-items: start;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.header #menu-btn{
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    margin: 5px 5px 5px 15px;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    cursor: pointer;
+}
+.header .head{
+    width: 100dvw;
+    height: 100%;
+    margin-left: 0;
+    align-items: center;
+    background: none;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+.header .logo{
+    width: 80px;
+    height: 100%;
+    align-self: center;
+    margin: 4px 4px 4px min(8vw, 100px);
+}
+.header .heading #appname{
+    width: fit-content;
+    height: 36px;
+    color: white;
+    margin: 2px;
+    font-family: cursive;
+    font-size: xx-large;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.header .heading{
+    width: fit-content;
+    height: 45px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.header .head .logout{
+    width: fit-content;
+    height: 45px;
+    padding: 5px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+}
+.header .head .logout ul{
+    width: fit-content;
+    height: 30px;
+    list-style: none;
+    margin-top: 12px;
+    color: white;
+    align-self: center;
+    padding: 5px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.header .head .logout ul li{
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px;
+}
+.header .head .logout #logout:hover{
+    transform: scale(0.9);
+}

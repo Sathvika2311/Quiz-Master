@@ -1,0 +1,188 @@
+.quiz {
+	width: 100dvw;
+	height: 100%;
+	margin: auto;
+	overflow: auto;
+	padding: 50px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	background-color: #f3f3f3;
+	border-radius: 7px;
+}
+
+.quiz-titlebar{
+	width: 100dvw;
+	height: fit-content;
+	background: transparent;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+.quiz-titlebar .quiz-details{
+	width: calc(100dvw - 380px);
+	height: fit-content;
+	margin: 10px 10px 10px 20px;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	border: 2px solid black;
+	border-radius: 10px;
+	background: white;
+}
+
+.category {
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+  }
+
+.quiz h1 {
+	font-size: 2.5rem;
+	color: rgb(9, 9, 121);
+	text-align: center;
+	background: #178bff;
+}
+
+.questions{
+	width: calc(100dvw - 380px);
+	height: calc(100dvh - 150px);
+	margin: 20px;
+	padding: 20px;
+	background: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border: whitesmoke;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+  .question{
+	width: 95%;
+	height: fit-content;
+	text-align: center;
+	user-select: none;
+	pointer-events: none;
+  }
+  .options{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	background: none;
+	width: 90%;
+	height: fit-content;
+	user-select: none;
+  }
+
+  .options button.selected {
+	background-color: rgb(85, 85, 101);  /* Change to any color you prefer */
+	color: white;
+  }
+  
+  .options button {
+	width: max-content;
+	min-width: 150px;
+	max-width: 100%;
+	background-color: white;
+	border: 1px solid #ddd;
+	padding: 10px 20px;
+	cursor: pointer;
+	margin: 5px 0;
+	color: black;
+    text-align: start;        
+  }
+
+  .controls {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	gap: 10px;
+  }
+  
+  button.next-btn {
+	background-color: #007bff; /* Blue background */
+	color: white;              /* White text */
+	border: none;              /* Remove default border */
+	padding: 12px 30px;        /* Add padding for size */
+	font-size: 16px;           /* Font size */
+	border-radius: 5px;        /* Rounded corners */
+	cursor: pointer;          /* Pointer cursor on hover */
+	transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button.next-btn:hover {
+	background-color: #0056b3; /* Darker blue when hovered */
+	transform: scale(1.05);     /* Slightly enlarge on hover */
+  }
+  
+  button.next-btn:focus {
+	outline: none;             /* Remove the outline when focused */
+  }
+
+  .question-boxes {
+	display: grid;
+	width: fit-content;
+	height: fit-content;
+	position: absolute;
+	right: 10px;
+  	grid-template-columns: repeat(5, 1fr); /* Create 5 columns */
+  	gap: 10px;
+	margin: 10px; /* Space between number boxes and question section */
+	justify-content: center;
+	background: white;
+	border: 2px solid whitesmoke; /* Thin border around the whole container */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  	padding: 10px; /* Padding inside the container */
+  	border-radius: 10px; /* Center the question numbers */
+  }
+  
+  .question-box {
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	text-align: center;
+	line-height: 40px;
+	background-color: lightgray;
+	cursor: pointer;
+	border-radius: 50%;
+	transition: background-color 0.3s;
+  }
+  
+  .question-box:hover {
+	background-color: #ccc;
+  }
+  
+  .question-box.active {
+	background-color: grey;
+	color: white;
+  }
+  /* Style for answered questions */
+.question-box.answered {
+	background-color: rgb(12, 218, 74);
+	color: white; /* Change text color to white */
+	border-color: rgb(12, 218, 74); /* Optional: grey border */
+  }
+  
+
+  .quiz-summary .question-summary .question-answer{
+	width: 90dvw;
+	height: fit-content;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+	padding: 20px;
+	margin: 10px;
+	background: none;
+  }
+
+  .quiz-summary .question-summary .question-answer.correct{
+	border: 2px solid rgb(23, 202, 23);
+  }
+  .quiz-summary .question-summary .question-answer.incorrect{
+	border: 2px solid rgb(255, 74, 74);
+  }

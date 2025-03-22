@@ -1,0 +1,118 @@
+.settings {
+    display: flex;
+    justify-content: center; /* Horizontally centers */
+    align-items: center; /* Vertically centers */
+    min-height: 100vh; /* Ensures the div takes full height of the viewport */
+    flex-direction: column; /* Stacks the form elements vertically */
+    text-align: center; /* Centers the text inside the settings */
+  }
+  
+  /* Styling for the settings__select div */
+  .settings .settings__select {
+    display: flex;
+    flex-direction: column; /* Stacks the select and button elements vertically */
+    align-items: center; /* Aligns the form elements at the center */
+    gap: 10px; /* Adds space between form elements */
+    padding: 20px;
+    border: 1px solid #ddd; /* Border around the form */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color for the form */
+    width: 400px; /* Adjust the width of the form */
+  }
+  
+  .settings h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .settings span {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the text fields */
+  .settings .MuiTextField-root {
+    width: 100%;
+  }
+  
+  /* Styling for the button */
+  .settings .MuiButton-root {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3f51b5; /* Primary color */
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .settings .MuiButton-root:hover {
+    background-color: #303f9f; /* Darker color on hover */
+  }
+  
+  /* Error message styling */
+  .settings .ErrorMessage {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  /*glowing button ---------------------------------------------------------------------------- */
+#start-quiz {
+  margin: 10px;
+  padding: 15px 40px;
+  width: fit-content;
+  border: none;
+  outline: none;
+  font-size: medium;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+#start-quiz::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* glow */
+ #start-quiz::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+#start-quiz:active {
+  color: #000;
+  font-weight: bold;
+}

@@ -1,0 +1,92 @@
+#about{
+    width: 100% ;
+    height: calc(100vh - 90px);
+    padding: 5px 0 0 5px;
+    border-radius: 0;
+    background: none;
+    justify-content: center;
+    align-items: center ;
+    overflow-y: auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+#about .about{
+    width: 100% ;
+    height: 95%;
+    padding: 5px 10px 10px 10px;
+    border-radius: 0;
+    opacity: 100%;
+    
+    align-items: start;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+#about .about .ele{
+    width: 45vw;
+    height: fit-content;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    color: rgb(60, 60, 60);
+    background: transparent;
+    margin: 10px 10px 10px 20px;
+    border-radius: 10px;
+    /*box-shadow: 0 5px 10px rgb(0,0,0,0.3);*/
+}
+#about .about .ele .content{
+    margin-left: 20px;
+}
+#about .about #about-us{
+    width: 90%;
+    box-shadow: none;
+    background: transparent;
+}
+#about .about #close-stmt{
+    width: 95%;
+    height: fit-content;
+    padding: 5px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    box-shadow: none;
+    text-align: center;
+    font-size: 18px;
+    color: aliceblue;
+    background: #1d1e22;
+}
+#about .about #about-us #about-us-content{
+    width: 75%;
+    box-shadow: none;
+}
+#about .about #mission{
+    width: 68%;
+    box-shadow: none;
+    background: transparent;
+}
+#about .about h3{
+    font-family: cursive;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+#about .about h4{
+    font-family: fantasy;
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+    color: black;
+}
+#about .about .ele .content ul{
+    list-style: disc;
+}
+#about .about .ele .content ul li{
+    margin-bottom: 5px;
+}
+#about .about .ele .content h5{
+    font-family: serif;
+    font-weight: 1000;
+    color: black;
+}

@@ -1,0 +1,93 @@
+#profile{
+    width: 100% ;
+    height: calc(100vh - 90px);
+    padding: 10px;
+    border-radius: 0;
+    opacity: 100%;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center ;
+    overflow-y: auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+#profile .profile{
+    width: 100% ;
+    height: fit-content ;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 100%;
+    justify-content: center;
+    align-items: center ;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#profile .profile #profile-icon{
+    width: 45vh;
+    height: 45vh;
+    border-radius: 50%;
+    margin: 30px;
+    padding: 20px;
+    background: white;
+    border: 5px solid rgb(132, 200, 245);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+  
+#profile .profile .userInfo{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+#profile .profile .userInfo ul{
+    justify-content: center;
+    align-items: center ;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+#profile .profile .userInfo ul li{
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+#profile .profile .userInfo ul li .details{
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+#profile .profile .userInfo ul li .details .inp{
+    width: 20vw;
+    height: 35px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 2px solid #0c6da9;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#profile .profile label{
+    color: black;
+    padding: 5px;
+    font-size: larger;
+}
