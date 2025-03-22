@@ -29,7 +29,7 @@ function App() {
       }
     });
 
-    return () => unsubscribe(); // Cleanup listener on unmount
+    return () => unsubscribe(); 
   }, [setUser]);
 
   return (
