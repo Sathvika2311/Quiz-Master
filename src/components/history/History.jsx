@@ -8,6 +8,7 @@ function History() {
   const [quizHistory, setQuizHistory] = useState([]);
   const [loading, setLoading] = useState(true);
   const { currentUser } = CurrentUser(); // Get logged-in user
+  const [ error, setError ] = useState("No quizzes found!!!");
 
   useEffect(() => {
     //if (!currentUser) return;
@@ -28,8 +29,9 @@ function History() {
         }));
 
         setQuizHistory(historyData);
-      } catch (error) {
-        console.error("Error fetching quiz history:", error);
+      } catch (e) {
+        console.error("Error fetching quiz history:", e);
+        setError("Please Check Internet Connection!");
       }
       setLoading(false);
     };
@@ -49,7 +51,7 @@ function History() {
       <h2>Your Quiz History</h2>
       {quizHistory.length === 0 ? (
         <div id="emptypage">
-          <p>No quizzes found!!!</p>
+          <p >{error}</p>
         </div>
       ) : (
         <div>

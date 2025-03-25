@@ -40,7 +40,7 @@ function Score() {
       <h1>Your Score : {score}/{total}</h1>
 
       <div className="controls">
-        <Button variant="contained" color="primary" size="large" onClick={handleHome}>
+        <Button variant="contained" color="primary" size="large" onClick={handleHome} style={{margin:"30px"}}>
           Go To Home
         </Button>
       </div>

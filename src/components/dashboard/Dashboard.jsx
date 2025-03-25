@@ -13,15 +13,15 @@ const Dashboard = () =>{
         {id:3, title:"Javascript", link:"https://www.youtube.com/watch?v=PkZNo7MFNFg"},
         {id:4, title:"Java", link:"https://www.youtube.com/watch?v=Qgl81fPcLc8"},
         {id:5, title:"Python", link:"https://www.youtube.com/watch?v=rfscVS0vtbw"},
-        {id:6, title:"C Programming", link:""},
-        {id:7, title:"DBMS", link:""},
-        {id:8, title:"Operating System", link:""},
-        {id:9, title:"DSA", link:""},
-        {id:10, title:"Computer Networks", link:""},
-        {id:11, title:"Next.js", link:""},
-        {id:12, title:"Angular", link:""},
-        {id:13, title:"Kotlin", link:""},
-        {id:14, title:"MongoDB", link:""},
+        {id:6, title:"C Programming", link:"https://www.youtube.com/watch?v=1uR4tL-OSNI"},
+        {id:7, title:"DBMS", link:"https://www.youtube.com/watch?v=scxc0FXp2rg"},
+        {id:8, title:"Operating System", link:"https://www.youtube.com/watch?v=mXw9ruZaxzQ"},
+        {id:9, title:"DSA", link:"https://www.youtube.com/watch?v=jQqQpPMYPXs"},
+        {id:10, title:"Computer Networks", link:"https://www.youtube.com/watch?v=HTpZ1rLRsNQ"},
+        {id:11, title:"Angular", link:"https://www.youtube.com/watch?v=f7BJFTEbc10"},
+        {id:12, title:"Kotlin", link:"https://www.youtube.com/watch?v=cxm9AHNDMPI"},
+        {id:13, title:"MongoDB", link:"https://www.youtube.com/watch?v=QPFlGswpyJY"},
+        {id:14, title:"Next.js", link:""}
     ]);
 
     const gotoVideo = ( title, link ) =>{
