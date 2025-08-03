@@ -141,10 +141,12 @@ const Login = () => {
                     <img className='ic' src="/lock_icon.png" width="22px" height="24px" alt=""/>
                 </div>
                 {errorMessage && <p style={{ color: "red", textAlign: "center" }}>{errorMessage}</p>}
-              
-              <button type="submit" className="btn" disabled={isSubmitting}>
-                  {isSubmitting ? <img src="/loading.gif" id="loader" width="24px" height="24px" alt="Logging in..."/> : "Login"}
-              </button>
+              <div style={{display:"flex",flexDirection:"row",justifyContent:"center",width:"100%",alignItems:"center"}}>
+                <button type="submit" className="btn" disabled={isSubmitting}>
+                    {isSubmitting ? <img src="/loading.gif" id="loader" width="24px" height="24px" alt="Logging in..."/> : "Login"}
+                </button>
+                
+              </div>
               <hr/>
               <button className="google-login" onClick={googleSignIn}>
                 <img src="/google.webp" width="24px" height="24px" alt="" /> Sign in with Google
@@ -204,3 +206,4 @@ const Login = () => {
 };
 
 export default Login;
+

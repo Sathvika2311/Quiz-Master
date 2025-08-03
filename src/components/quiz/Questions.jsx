@@ -8,6 +8,8 @@ import { Button, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/
 import { toast } from 'react-toastify';
 
 function Questions() {
+  const GEMINI_API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
+
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
@@ -107,7 +109,7 @@ function Questions() {
         const chunk = Math.min(chunkSize, number - allQuestions.length);
 
         const response = await axios.post(
-          "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=AIzaSyDfVq-HvZRtGaHAYSLiAbl5oBPElgt1bNA",
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`,
           {
             contents: [
               {

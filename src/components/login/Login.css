@@ -102,7 +102,7 @@
     text-decoration: none;
   }
   #login .btn{
-    width: 100%;
+    width: 45%;
     height: 48px;
     background: linear-gradient( to right, #009fff,#19a8ff,#30b1ff,#48baff,#62c4ff );
     /*background: #cfc811;*/

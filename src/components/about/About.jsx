@@ -68,6 +68,12 @@ function About(){
                         <b>Email:</b> <u style={{fontStyle:'italic',color:'blue'}}>quizmaster@gmail.com</u>
                     </div>
                 </div>
+                <div className="ele" id="credits"><h4>Credits</h4><br></br>
+                    <div className="content">
+                        Images sourced from <b>Pinterest</b> — all rights belong to their respective owners.<br/>
+                        Video content sourced from <b>Youtube</b> — all rights belong to their respective owners.
+                    </div>
+                </div>
                 <div className="ele" id="close-stmt">
                     At Quiz Master, we believe that with the right preparation tools, no goal is too big. 
                     Start your journey to success today and let us be a part of your story!

@@ -73,6 +73,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 #dashboard .dashboard #learning-content .learning-video .thumbnail{

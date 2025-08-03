@@ -13,6 +13,7 @@ import Questions from './components/quiz/Questions';
 import Score from './components/quiz/Score';
 import Home from './components/home/Home';
 import VideoPlayer from './components/dashboard/VideoPlayer';
+import Admin from './components/admin/Admin';
 
 function App() {
 
@@ -69,6 +70,7 @@ function App() {
         <Route path='/questions' element={<Questions key={Date.now()} />} />
         <Route path='/score' element={<Score/>} />
         <Route path="/quizmaster/learning-content" element={<VideoPlayer/>} />
+        <Route path="/quizmaster/admin" element={<Admin/>}/>
       </Routes>
       </div>
     </Router>
