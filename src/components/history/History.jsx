@@ -150,11 +150,12 @@ function History() {
             >
               <div style={{ width:"100%", height:"fit-content", textAlign:"center",padding:"10px 5px 0px 5px", justifyContent: "center", 
                 background: "#b4dbffff", marginBottom:"10px"}}>
-                <h3 style={{ justifyContent: "center"}}>
+                <strong><h3 style={{ justifyContent: "center"}}>
                   Quiz {quizHistory.length - selectedQuiz} -{" "}
                   {quizHistory[selectedQuiz].category} (
                   {quizHistory[selectedQuiz].difficulty})
                 </h3>
+                </strong>
                 <p style={{ justifyContent: "center" }}>
                   <strong>Score:</strong> {quizHistory[selectedQuiz].score} /{" "}
                   {quizHistory[selectedQuiz].totalQuestions}
@@ -162,10 +163,11 @@ function History() {
               </div>
               <div>
                 <ul>
+                  <br/>
                   {quizHistory[selectedQuiz].questions.map((q, idx) => (
                     <li key={idx}>
                       <p>
-                        <strong>Q{idx + 1}:</strong> {q.question}
+                        <strong>Q{idx + 1}: {q.question}</strong> 
                       </p>
                       <p>
                         <strong>Options:</strong>
@@ -178,6 +180,9 @@ function History() {
                       <p>
                         <strong>Correct Answer:</strong> {q.correct_answer}
                       </p>
+                      <br/>
+                      <div style={{width:"98%",height:"1px",background:"grey"}}></div>
+                      <br/>
                     </li>
                   ))}
                 </ul>

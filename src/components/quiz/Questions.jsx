@@ -118,8 +118,9 @@ function Questions() {
                     text: `You are an expert quiz master. Provide ${number} multiple choice unique questions in the category ${category} 
                     with difficulty ${difficulty}. Convert the given response data into a structured JSON format for multiple-choice questions.
                     Each question should have: A question field containing the text of the question. An options array containing four choices
-                    (A, B, C, D). A correct_answer field specifying the correct option. An explanation field giving a short explanation for 
-                    the correct answer. The output should be a JSON array where each object represents a question.`
+                    (A, B, C, D - option letters should be in uppercase only followed by single right parenthesis). A correct_answer field specifying the correct option letter should 
+                    be in uppercase. An explanation field giving a short explanation for the correct answer. The output should be a JSON array 
+                    where each object represents a question.`
                   }
                 ]
               }
