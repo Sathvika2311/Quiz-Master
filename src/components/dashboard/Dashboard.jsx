@@ -50,6 +50,12 @@ const Dashboard = () =>{
                                         </div>
                             })
                         }
+                        <div className="learning-video" onClick={()=> window.open("https://youtube.com", "_blank") }>
+                            <div className="thumbnail" style={{background:"white",display:"flex", flexDirection:"row",justifyContent:"center",alignItems:"center"}}>
+                                <img width="150px" height="150px" src="/more.png" style={{background:"transparent"}}></img>
+                            </div>
+                            <div>For More</div>
+                        </div>
                     </div>
                 )}
                 <div id="quizdiv">
