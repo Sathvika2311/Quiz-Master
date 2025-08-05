@@ -1,23 +1,22 @@
 .settings {
     display: flex;
-    justify-content: center; /* Horizontally centers */
-    align-items: center; /* Vertically centers */
-    min-height: 100vh; /* Ensures the div takes full height of the viewport */
-    flex-direction: column; /* Stacks the form elements vertically */
-    text-align: center; /* Centers the text inside the settings */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    flex-direction: column; 
+    text-align: center; 
   }
   
-  /* Styling for the settings__select div */
   .settings .settings__select {
     display: flex;
-    flex-direction: column; /* Stacks the select and button elements vertically */
-    align-items: center; /* Aligns the form elements at the center */
-    gap: 10px; /* Adds space between form elements */
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
     padding: 20px;
-    border: 1px solid #ddd; /* Border around the form */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background color for the form */
-    width: 400px; /* Adjust the width of the form */
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    width: 400px; 
   }
   
   .settings h1 {
@@ -32,24 +31,22 @@
     margin-bottom: 20px;
   }
   
-  /* Styling for the text fields */
   .settings .MuiTextField-root {
     width: 100%;
   }
   
-  /* Styling for the button */
   .settings .MuiButton-root {
     width: 100%;
     padding: 12px 20px;
     font-size: 18px;
     font-weight: bold;
-    background-color: #3f51b5; /* Primary color */
+    background-color: #3f51b5; 
     color: white;
     border-radius: 4px;
   }
   
   .settings .MuiButton-root:hover {
-    background-color: #303f9f; /* Darker color on hover */
+    background-color: #303f9f; 
   }
   
   /* Error message styling */
