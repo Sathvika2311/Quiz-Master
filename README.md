@@ -1,6 +1,6 @@
 # Quiz Master 
 
-**Quiz Master** is an interactive quiz application that allows users to learn, attempt quizzes, and track their performance over time. It offers a smooth user experience with login/registration, customizable quiz options, and detailed performance analytics.
+**Quiz Master** is an interactive quiz application that allows users to learn, attempt quizzes, and track their performance over time. It offers a smooth user experience with login or registration, customizable quiz options, and detailed performance analytics.
 
 ## 🚀 Live Demo
 [Visit Quiz Master](https://quiz-master-eosin.vercel.app)
