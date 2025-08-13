@@ -33,6 +33,7 @@
     background: transparent;
     margin: 10px 10px 10px 20px;
     border-radius: 10px;
+    z-index: 2;
 }
 #about .about .ele .content{
     margin-left: 20px;
@@ -59,7 +60,7 @@
     box-shadow: none;
 }
 #about .about #mission{
-    width: 68%;
+    width: 60%;
     box-shadow: none;
     background: transparent;
 }
@@ -88,9 +89,4 @@
     font-family: serif;
     font-weight: 1000;
     color: black;
-}
-#about .about #credits{
-    width: 68%;
-    box-shadow: none;
-    background: transparent;
 }

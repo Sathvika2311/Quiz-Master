@@ -200,6 +200,8 @@ function Questions() {
 
       setScore(newScore);
       setOpenConfirmDialog(false);
+      setTimerRunning(false);
+      setLoading(true);
       try {
         // Store quiz data in Firestore
         await addDoc(collection(db, "quizzes"), {
@@ -218,8 +220,10 @@ function Questions() {
           }))
         });
         toast.success("Submitted successfully", { hideProgressBar: true, position: "top-center" });
+        setLoading(false);
 
       } catch (error) {
+        setLoading(false);
         console.error("Error saving quiz to Firestore:", error);
       }
       exitFullScreen();

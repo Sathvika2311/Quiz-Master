@@ -95,8 +95,8 @@ function Profile() {
                                         type={visible ? "text" : "password"} 
                                         style={{ border: "none", margin: "0", width: "calc(100% - 30px)", background: "none" }} />
                                     <div onClick={() => setVisible(!visible)}>
-                                        {visible ? <img src="/opened-eye.png" width="24px" height="24px" alt="hide" /> :
-                                            <img src="/closed-eye.png" width="24px" height="24px" alt="show" />}
+                                        {visible ? <img src="/closed-eye.png" width="24px" height="24px" alt="show" /> : 
+                                            <img src="/opened-eye.png" width="24px" height="24px" alt="hide" />}
                                     </div>
                                 </div>
                             </div>

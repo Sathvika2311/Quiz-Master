@@ -72,7 +72,7 @@ const Quiz = () => {
           renderInput={(params) => (
             <TextField
               {...params}
-              label="Search or Select Category..."
+              label="Enter Category..."
               variant="outlined"
               style={{ marginBottom: 30 }}
               

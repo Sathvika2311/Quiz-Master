@@ -4,7 +4,7 @@
     padding: 10px;
     border-radius: 0;
     opacity: 100%;
-    background: white;
+    background: radial-gradient(circle, #ffffff, #f5f5f5);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

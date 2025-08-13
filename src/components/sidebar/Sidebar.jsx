@@ -24,13 +24,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   };
 
   const pages = [
-    { id: 1, name: "Dashboard", icon: "/dashboard.png", link: "/quizmaster/dashboard" },
+    { id: 1, name: "Home", icon: "/dashboard.png", link: "/quizmaster/dashboard" },
     { id: 2, name: "Performance", icon: "/performance.png", link: "/quizmaster/performance" },
     { id: 3, name: "History", icon: "/history.png", link: "/quizmaster/history" },
     { id: 4, name: "Profile", icon: "/profile.png", link: "/quizmaster/profile" },
-    { id: 5, name: "About Us", icon: "/about.png", link: "/quizmaster/about" },
-    /*{ id: 6, name: "Settings", icon: "/settings.png", link: "/quizmaster/about" },
-    { id: 7, name: "Notifications", icon: "/alerts.png", link: "/quizmaster/about" }*/
+    { id: 5, name: "About Us", icon: "/about.png", link: "/quizmaster/about" }
   ];
 
   const handleNavigation = (pageName, link) => {

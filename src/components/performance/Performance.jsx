@@ -86,11 +86,15 @@ const Performance = () => {
                 </div>
             ) : (
                 <div className='performance'>
-                    <select onChange={(e) => setFilter(e.target.value)} value={filter}>
-                        {uniqueCourses.map((course, index) => (
-                            <option key={index} value={course}>{course}</option>
-                        ))}
-                    </select>
+                    <div style={{width:"100%",justifyContent:"center", display:"flex", flexDirection:"row"}}>
+                        <p style={{padding:"5px 10px 5px 10px"}}>Select Category : </p>
+                        <select onChange={(e) => setFilter(e.target.value)} value={filter} style={{width:"fit-content", height:"fit-content", 
+                            padding:"5px 10px 5px 10px", border:"2px solid #178bff", borderRadius:"5px", background:"black", color:"white"}}>
+                            {uniqueCourses.map((course, index) => (
+                                <option key={index} value={course}>{course}</option>
+                            ))}
+                        </select>
+                    </div>
                     <ResponsiveContainer width="100%" height={500} style={{ marginTop: "30px" }}>
                         <BarChart data={filteredData} margin={{ top: 20, right: 30, left: 20, bottom: 50 }}>
                             <CartesianGrid strokeDasharray="3 3" />
