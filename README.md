@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Quiz Master 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Quiz Master** is an interactive quiz application that allows users to learn, attempt quizzes, and track their performance over time. It offers a smooth user experience with login/registration, customizable quiz options, and detailed performance analytics.
 
-## Available Scripts
+## 🚀 Live Demo
+[Visit Quiz Master](https://quiz-master-eosin.vercel.app)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔑 Authentication
+- **Login & Registration** using email and password.
+- Secure user account management.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🏠 Navigation
+- Navigation bar with:
+  - **Home**
+  - **Profile**
+  - **Quiz History**
+  - **Performance**
+  - **About Us**
+  - **Logout**
 
-### `npm test`
+### 📚 Home
+- Start a quiz by selecting:
+  - **Category** (choose from dropdown or enter course name)
+  - **Number of Questions** (5–50)
+  - **Difficulty** (Easy / Medium / Hard)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📝 Quiz Page
+- Displays one question at a time.
+- **Question Navigator** to jump to any question:
+  - Attempted questions marked in **green**.
+- **Next**, **Previous**, and **Submit** buttons.
+- On submission:
+  - **Score page** with results and explanations for correct answers.
 
-### `npm run build`
+### 📊 Performance Tracking
+- **Overall Performance**: Average score per course in bar graph format.
+- **Course-Specific Performance**: Select a course to view past quiz scores in bar graph.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📜 Quiz History
+- View all past quiz attempts with scores and details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 👤 Profile Management
+- Change **username** and **password**.
+- View registered **email** (non-editable).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠️ Tech Stack
+- **Frontend**: React.js
+- **Authentication**: Firebase Auth
+- **Database**: Firebase Firestore
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📌 **Usage**
+- Register or Login using your email and password.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Navigate to Home.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Start a quiz by selecting category, question count, and difficulty.
 
-## Learn More
+- Attempt quiz using Next/Previous or the Question Navigator.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Submit quiz to see your score and explanations.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Check Performance and Quiz History anytime.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 📄 **License**
+- This project is licensed under the MIT License.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📥 Installation & Setup
 
-### Making a Progressive Web App
+```bash
+# Clone the repository
+git clone https://github.com/Sathvika2311/Quiz-Master.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Navigate to the project folder
+cd quiz-master
 
-### Advanced Configuration
+#Create .env file where package.json was placed and setup with your gemini, firebase api keys
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Install dependencies
+npm install
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Start the development server
+npm start
